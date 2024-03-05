@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\91738\Documents\Amazon\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+108530177.index
+3364113949.index
+3144770371.index
+3514552300.index
+2250473564.index

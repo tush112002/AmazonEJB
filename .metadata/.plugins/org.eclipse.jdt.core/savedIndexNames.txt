@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\91738\Documents\Amazon\.metadata\.plugins\org.eclipse.jdt.core
+3364113949.index
+2845591777.index
+1865797976.index
