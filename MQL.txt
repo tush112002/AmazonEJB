@@ -1,0 +1,39 @@
+-------------------------------------MQL----------------------------------------
+
+print context;
+//output- guest
+
+set context user creator; (user/person)
+//creator is super user with schema creation privelages
+
+add type t1;
+list type //output all type installed with 3DSpace
+
+
+set context person guest;
+add type t2;
+
+//Error: #1900068: add type failed
+//Error: #1500039: Context user 'guest' is not authorized for business administration i.e. guest is not superuser
+
+
+list person;
+//output all persons (eg. ....., Workspace Member Grantor,admin_platform, creator, guest)
+
+
+print person admin_platform;
+//output all details/info about perso "admin_platform" like (fullname, accesses it has, roles assigned,time it was created/modified etc. .... and HISTORY)
+
+
+print person admin platform !history;
+// print all the above details except history
+
+
+print person admin_platform select fullname;
+// output: print only "fullname"
+
+print person admin_platform select role;
+// output: error (use "assignments" instead of "role")
+
+print person admin_platform select assignments;
+// output: print only "fullname"
